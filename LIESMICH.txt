@@ -1,0 +1,7 @@
+EINRICHTUNG (Strato, PHP aktiv)
+1. Google Cloud: Calendar API + Places API (New) aktivieren. Service Account anlegen, JSON-Schlüssel als api/service-account.json hochladen.
+2. Svens Google-Kalender für die Service-Account-Mail freigeben ("Änderungen an Terminen vornehmen"). Kalender-ID in api/lib.php eintragen.
+3. Places-API-Key (auf die Strato-Domain/IP beschränken) und Place ID des Salons in api/lib.php eintragen.
+4. Strato-Kundenbereich > Cronjobs: alle 5 Min. php api/reminder.php ausführen (oder URL api/reminder.php?key=CRON_KEY). MAIL_FROM = Mailadresse der eigenen Domain.
+5. Impressum/Datenschutz mit echten Daten füllen. Preise in inhalt.js anpassen. Alle Dateien per FTP ins Webverzeichnis laden.
+6. api/service-account.json per .htaccess sperren: <Files "service-account.json">Require all denied</Files>

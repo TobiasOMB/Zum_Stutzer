@@ -1,0 +1,14 @@
+WEBSEITE SELBST BEARBEITEN (ohne Programmierkenntnisse)
+=========================================================
+1) TEXTE, PREISE, ÖFFNUNGSZEITEN, ADRESSE, TELEFON: Datei  inhalt.js  mit einem Texteditor öffnen
+   (Windows: Editor / Notepad++, Mac: TextEdit im Nur-Text-Modus). Nur Text zwischen "..." ändern.
+2) BILDER: im Ordner  images  ersetzen. Gleicher Dateiname = automatisch getauscht.
+   Anderer Name? Dann den Namen in inhalt.js bei "bild:" eintragen.
+   Slider: slide-1.jpg ... slide-5.jpg  (Querformat, mind. 1920x1080 px, dunkle Stimmung, max. 300 KB)
+   Galerie: schnitt-1.jpg ... schnitt-6.jpg (Hochformat 4:5, 1200x1500 px, max. 250 KB)
+   Zu große Handyfotos vorher auf squoosh.app verkleinern. Dateinamen klein, ohne Umlaute/Leerzeichen.
+   Slider-Bildausschnitt: bei "fokus" lässt sich einstellen, welcher Teil des Fotos sichtbar bleibt (z. B. "30% 50%").
+3) Neue Leistung: in inhalt.js eine Zeile { name: "...", preis: 10, min: 15 } kopieren und anpassen.
+4) Nach dem Ändern die Datei per FTP bei Strato hochladen (überschreiben).
+NICHT ÄNDERN: style.css, site.js, *.html, Ordner api (außer api/lib.php einmalig laut LIESMICH.txt).
+Impressum/Datenschutz: Adresse, Telefon, E-Mail, USt-ID kommen automatisch aus inhalt.js.
